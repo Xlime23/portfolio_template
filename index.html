@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Portfolio</title>
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		img {
+			width: 150px;
+			height: auto;
+			border-radius: 8px;
+		}
+	</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="IMG-20250403-WA0048.jpg" alt="My Profile" id="profile-img">
+        <h1>Hello, I'm Pius Promise.A. </h1>
+        <p>Passionate about Trading, philosophy of life, and escaping the matrix of any RAT-RACE.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I enjoy learning new ideas to life through reality facts . My focus is as a philosophy - enthusiat, truth seeking and being a creative soul.</p>
+        </section>
+
+        <section id="multimedia-showcase">
+            <h2>Multimedia Showcase</h2>
+            <h3>My Audio Greeting:</h3>
+            <audio controls>
+                <source src="my_audio_file.mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>A Quick Project Video:</h3>
+            <video controls width="320" height="240">
+                <source src="my_video_file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="interactive-skills">
+            <h2>My Skills</h2>
+            <div class="skill-buttons">
+                <button class="skill-btn" data-skill="HTML">HTML</button>
+                <button class="skill-btn" data-skill="CSS">CSS</button>
+                <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+            </div>
+            <p id="skill-description">Click a skill to learn more!</p>
+        </section>
+
+        <section id="portfolio-list">
+            <h2>My Projects</h2>
+            <div id="projects-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> PIUS PROMISE ABUO. All rights reserved.</p>
+        <button id="themeToggle">Toggle Light Mode</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
